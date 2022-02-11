@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="700.0" prefWidth="500.0" style="-fx-background-color: WHITE;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ModifyCustomer">
+   <children>
+      <BorderPane prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <AnchorPane prefHeight="94.0" prefWidth="500.0" style="-fx-background-color: #284B63;" BorderPane.alignment="CENTER">
+               <children>
+                  <Pane layoutY="51.0" prefHeight="43.0" prefWidth="500.0" style="-fx-background-color: GRAY;" />
+                  <VBox alignment="TOP_CENTER" prefHeight="93.0" prefWidth="500.0">
+                     <children>
+                        <HBox alignment="CENTER_RIGHT" prefHeight="52.0" prefWidth="500.0">
+                           <children>
+                              <Label fx:id="modCustNotificationLbl" minHeight="52.0" text="Communication Appears Here" textFill="#efe7e7">
+                                 <HBox.margin>
+                                    <Insets right="80.0" />
+                                 </HBox.margin>
+                                 <font>
+                                    <Font name="Calibri Light Italic" size="18.0" />
+                                 </font>
+                              </Label>
+                              <ImageView fitHeight="46.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/Acc_GT_Solid_Wht_RGB.png" />
+                                 </image>
+                                 <HBox.margin>
+                                    <Insets right="15.0" top="5.0" />
+                                 </HBox.margin>
+                              </ImageView>
+                           </children>
+                        </HBox>
+                        <Label text="Modify Customer" textFill="WHITE">
+                           <font>
+                              <Font name="Calibri Bold" size="24.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets top="8.0" />
+                           </VBox.margin>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+         </top>
+         <center>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+               <children>
+                  <GridPane alignment="CENTER" prefHeight="606.0" prefWidth="449.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="244.39996337890625" minWidth="10.0" prefWidth="173.59998779296876" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="327.20001220703125" minWidth="10.0" prefWidth="327.20001220703125" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints maxHeight="70.0" minHeight="10.0" prefHeight="60.79999694824219" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="99.20000305175782" minHeight="10.0" prefHeight="61.60000305175782" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="96.79999389648438" minHeight="10.0" prefHeight="63.199987792968756" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="97.60001220703126" minHeight="10.0" prefHeight="55.199987792968784" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="116.80002441406248" minHeight="10.0" prefHeight="64.00000610351566" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="120.79999389648435" minHeight="10.0" prefHeight="62.400006103515636" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="130.4000305175781" minHeight="10.0" prefHeight="71.00001220703126" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Label text="Customer ID:">
+                           <GridPane.margin>
+                              <Insets left="50.0" />
+                           </GridPane.margin>
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label text="Customer Name:" GridPane.rowIndex="1">
+                           <GridPane.margin>
+                              <Insets left="50.0" />
+                           </GridPane.margin>
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label text="Address:" GridPane.rowIndex="2">
+                           <GridPane.margin>
+                              <Insets left="50.0" />
+                           </GridPane.margin>
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label text="Postal Code:" GridPane.rowIndex="3">
+                           <GridPane.margin>
+                              <Insets left="50.0" />
+                           </GridPane.margin>
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label text="Phone Number:" GridPane.rowIndex="4">
+                           <GridPane.margin>
+                              <Insets left="50.0" />
+                           </GridPane.margin>
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label text="Country:" GridPane.rowIndex="5">
+                           <GridPane.margin>
+                              <Insets left="50.0" />
+                           </GridPane.margin>
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label text="State:" GridPane.rowIndex="6">
+                           <GridPane.margin>
+                              <Insets left="50.0" />
+                           </GridPane.margin>
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="modCustIdTxt" editable="false" maxWidth="-Infinity" opacity="0.56" prefWidth="310.0" promptText="Auto Generated" GridPane.columnIndex="1">
+                           <GridPane.margin>
+                              <Insets right="10.0" />
+                           </GridPane.margin>
+                        </TextField>
+                        <TextField fx:id="modCustNameTxt" maxWidth="-Infinity" prefWidth="310.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <GridPane.margin>
+                              <Insets right="10.0" />
+                           </GridPane.margin>
+                        </TextField>
+                        <TextField fx:id="modCustAddressTxt" maxWidth="-Infinity" prefWidth="310.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                           <GridPane.margin>
+                              <Insets right="10.0" />
+                           </GridPane.margin>
+                        </TextField>
+                        <TextField fx:id="modCustPostalCodeTxt" maxWidth="-Infinity" prefWidth="310.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                           <GridPane.margin>
+                              <Insets right="10.0" />
+                           </GridPane.margin>
+                        </TextField>
+                        <TextField fx:id="modCustPhoneNumberTxt" maxWidth="-Infinity" prefWidth="203100.0" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                           <GridPane.margin>
+                              <Insets right="10.0" />
+                           </GridPane.margin>
+                        </TextField>
+                        <ComboBox fx:id="countryComboBox" onAction="#onActionCountryComboBox" prefWidth="250.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                        <ComboBox fx:id="stateComboBox" onAction="#onActionStateComboBox" prefWidth="250.0" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="10.0" top="10.0" />
+                     </VBox.margin>
+                  </GridPane>
+                  <HBox alignment="CENTER" prefHeight="160.0" prefWidth="500.0">
+                     <children>
+                        <Button mnemonicParsing="false" onAction="#onActionModCustSaveBtn" prefHeight="35.0" prefWidth="75.0" text="Save">
+                           <HBox.margin>
+                              <Insets right="25.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font name="Calibri" size="14.0" />
+                           </font>
+                        </Button>
+                        <Button mnemonicParsing="false" onAction="#onActionModCustCloseBtn" prefHeight="35.0" prefWidth="75.0" text="Close">
+                           <HBox.margin>
+                              <Insets left="25.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font name="Calibri" size="14.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>
